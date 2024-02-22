@@ -6,6 +6,19 @@
 [![](https://img.shields.io/docker/pulls/pluja/whishper?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/pluja/whishper)
 
 **Whishper** is an open-source, 100% local audio transcription and subtitling suite with a full-featured web UI.
+## Fast Windows install for HAMK
+
+```bash
+
+mkdir -p c:\temp\docker\whishper
+cd c:\temp\docker\whishper
+
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/TeroKeso/whishper/main/example.env -OutFile .env -UseBasicParsing
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/TeroKeso/whishper/main/docker-compose.yml -OutFile docker-compose.yml -UseBasicParsing
+docker-compose up -d
+
+```
+
 
 ## Features
 
