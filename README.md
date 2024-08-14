@@ -6,7 +6,33 @@
 [![](https://img.shields.io/docker/pulls/pluja/whishper?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/pluja/whishper)
 
 **Whishper** is an open-source, 100% local audio transcription and subtitling suite with a full-featured web UI.
-## Fast Windows install for HAMK
+
+## Windows install for HAMK managed computers
+
+1) Order Docker desktop to your computer / username from Servidedesk.hamk.fi / https://servicedesk.hamk.fi/helpdesk/KB/View/160096-wsl-2-windows-subsystem-for-linux-asennusohjeet
+2) Install Docker Desktop from company portal. Servicedesk will reply when it is ready
+3) Reboot your computer
+4) Install commands and steps 
+ 
+```bash
+#Make a folder c:\temp\docker\whishper using terminal or make folder your self.
+
+mkdir -p c:\temp\docker\whishper
+cd c:\temp\docker\whishper
+ 
+#copy files manually (.env docker-compose.yml) from S:\KO\Tietojenkäsittely\tkeso\whishper or run  copy commands in cli 
+copy S:\KO\Tietojenkäsittely\tkeso\whishper\.env c:\temp\docker\whishper\.env
+copy S:\KO\Tietojenkäsittely\tkeso\whishper\docker-compose.yml
+
+c:\temp\docker\whishper\docker-compose.yml
+ 
+#Start docker. You need a cmd or powershell terminal. After the install you only need to start Docker desktop.
+
+cd c:\temp\docker\whishper
+docker-compose up -d
+```
+[How to install Video](https://drive.google.com/drive/folders/15IAwI6g77deVKXjrhJBbIdg45gGBuXpK?usp=sharing)
+## Fast Windows install for HAMK when you have all access to your computer
 
 ```bash
 
